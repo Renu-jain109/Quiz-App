@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Quiz App</title>
+
+    <!-- Poppins font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="QuizApp.css">
+</head>
+
+<body>
+    <div class="app">
+        <h1>⚡ Web Dev & Prompting Quiz</h1>
+
+        <div class="controls">
+            <label for="category-select">Choose category:</label>
+            <select id="category-select">
+                <!-- options injected by JS -->
+            </select>
+            <button id="start-round-btn" class="small-btn">Start Round</button>
+        </div>
+
+        <div class="quiz">
+            <div class="meta">
+                <span id="category">Round: —</span>
+                <span id="progress">Q <span id="q-num">0</span> / <span id="q-total">0</span></span>
+            </div>
+
+            <h2 id="question">Select a category and click "Start Round"</h2>
+
+            <div id="answer-buttons" class="btn-grid">
+                <!-- answer buttons injected here -->
+            </div>
+
+            <div class="actions">
+                <button id="next-btn" class="primary hidden">Next</button>
+                <button id="next-round-btn" class="primary hidden">Next Round (same category)</button>
+                <button id="choose-cat-btn" class="secondary hidden">Choose Category</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="QuizApp.js"></script>
+</body>
+
+</html> 
